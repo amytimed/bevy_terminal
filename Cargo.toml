@@ -1,0 +1,19 @@
+[package]
+name = "bevy_terminal"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/amytimed/bevy_terminal"
+
+[dependencies]
+bevy = { version = "0.13.2", default-features = false, features = [
+    "bevy_scene",
+    "multi-threaded",
+] }
+image = "0.25.1"
+term_size = "0.3.2"
+tty-read = { git = "https://github.com/timvisee/tty-read-rs" }
+termios = "0.3"
+
+# example deps
+[dev-dependencies]
+bevy_xpbd_2d = "0.4"
